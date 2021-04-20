@@ -1,0 +1,72 @@
+/* #=============================================== default ==============================================================# */
+
+body{
+    background-color: #171717;
+    margin: 0;
+}
+a{
+    text-decoration: underline dotted;
+    color: #129790;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* #=============================================== NAV ==============================================================# */
+
+nav{
+    position: sticky;
+    margin-top: 40px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+nav ul.Right{
+    margin-left: 60%;
+    margin-top: 40px;
+    display:block;
+}
+nav::before{
+    content: 'R';
+    font-family: 'Indie Flower', cursive;
+    font-size:170px;
+    color : #129790;
+    position :absolute;
+    top:-70px;
+    left:4%; 
+    transition: all 5s;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 19px;
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li a{
+    transition: all .1s;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-size: 20px;
+    text-shadow: 0px 6px 13px #C2CE87;
+    text-decoration:none;
+}
+nav:hover::before{
+    transform:rotate(380deg);
+}
+
+/* #=============================================== HOME ==============================================================# */
+
