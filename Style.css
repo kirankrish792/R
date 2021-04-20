@@ -26,24 +26,28 @@ a{
 /* #=============================================== NAV ==============================================================# */
 
 nav{
+    width: 100%;
     position: sticky;
     margin-top: 40px;
-    margin: 10px;
+    margin-right: 0;
     margin-bottom: 20px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    
 }
-nav ul.Right{
-    margin-left: 60%;
-    margin-top: 40px;
-    display:block;
+nav ul{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 nav::before{
     content: 'R';
     font-family: 'Indie Flower', cursive;
-    font-size:170px;
+    font-size:150px;
     color : #129790;
     position :absolute;
-    top:-70px;
-    left:4%; 
+    top:-70%;
+    left:5%; 
     transition: all 5s;
 }
 nav ul li{
