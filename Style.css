@@ -4,6 +4,11 @@ body{
     background-color: #171717;
     margin: 0;
 }
+p::selection{
+    background-color:rgba(0,0,0,7);
+    color: white;
+    text-decoration: white wavy underline;
+}
 a{
     text-decoration: underline dotted;
     color: #129790;
@@ -28,25 +33,29 @@ a{
 nav{
     width: 100%;
     position: sticky;
+    top:2px;
     margin-top: 40px;
     margin-right: 0;
     margin-bottom: 20px;
     display:flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
+    flex-wrap: wrap;
     
 }
 nav ul{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 20px;
+    margin-left: 25%;
 }
 nav::before{
     content: 'R';
     font-family: 'Indie Flower', cursive;
-    font-size:150px;
+    font-size:100px;
     color : #129790;
     position :absolute;
-    top:-70%;
+    margin-top: 30px;
+    top: -65px;
     left:5%; 
     transition: all 5s;
 }
@@ -55,6 +64,7 @@ nav ul li{
     padding: 10px;
     font-size: 19px;
     text-decoration: none;
+    position: sticky;
 }
 nav ul{
     list-style: none;
